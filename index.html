@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elixir Aromático</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #000000;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #FFFFFF;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(4, 4fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h2 {
+            font-size: 1.5rem;
+            color: #6b4226;
+            margin: 10px 0;
+        }
+        .product p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+        .product .price {
+            font-size: 1.2rem;
+            color: #e67e22;
+            margin: 10px 0;
+        }
+        .product a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6b4226;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .product a:hover {
+            background-color: #8b5a38;
+        }
+        @media (max-width: 768px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Elixir Aromático</h1>
+    </header>
+    <section class="products">
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54106032679_a64bfd1973_w.jpg" alt="Vela 1">
+            <h2>Aromaterapia Menta & Limón</h2>
+            <p>Energizante y fresco, ideal para sesiones de aromaterapia, esta vela revitaliza los sentidos y renueva el espíritu.</p>
+            <p class="price">$15.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54105690471_5589dde7fc_w.jpg" alt="Vela 2">
+            <h2>Ámbar de Canela & Naranja</h2>
+            <p>Combinación cálida y especiada, esta edición limitada es ideal para temporadas festivas como san valentín, día de la madre o del padre o día del amor y la amistad.</p>
+            <p class="price">$15.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54105690466_6c2375811d_w.jpg" alt="Vela 3">
+            <h2>Brisa de Coco</h2>
+            <p>Evoca la suavidad del paraíso con el dulce aroma a coco, perfecto para momentos de relajación y serenidad.</p>
+            <p class="price">$5.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54105951433_afba6a224b_w.jpg" alt="Vela 4">
+            <h2>Despertar de Naranja</h2>
+            <p>Revitaliza tu espacio con la chispeante frescura de la naranja, una explosión cítrica que llena de energía positiva.</p>
+            <p class="price">$12.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54105690496_3b657c5763_w.jpg" alt="Vela 5">
+            <h2>Dorado Tropical de Maracuyá</h2>
+            <p>Siente la frescura tropical y la vibrante dulzura del maracuyá, un aroma exótico que ilumina y energiza cada rincón.</p>
+            <p class="price">$8.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54106145960_f4e6dfa3c5_w.jpg" alt="Vela 6">
+            <h2>Eucalipto Refrescante</h2>
+            <p>Refresca el ambiente con el aroma revitalizante del eucalipto, ideal para purificar el aire y relajar la mente.</p>
+            <p class="price">$13.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54106032749_ba131c8bf9_w.jpg" alt="Vela 7">
+            <h2>Flor de Cerezo</h2>
+            <p>Celebra la temporada navideña con esta fragancia floral y dulce, que combina la frescura primaveral con el encanto cálido de la Navidad, perfecta para crear un ambiente acogedor y festivo.</p>
+            <p class="price">$8.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54106146085_66b76227e8_w.jpg" alt="Vela 8">
+            <h2>Jazmín Encantador</h2>
+            <p>Déjate seducir por la fragancia exótica y floral del jazmín, que añade un toque de elegancia y sofisticación a cualquier ambiente.</p>
+            <p class="price">$9.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54105951558_8de162f9d4_w.jpg" alt="Vela 9">
+            <h2>Madera Sereno</h2>
+            <p>Un aroma fuerte y terroso que evoca tranquilidad, perfecto para crear un espacio de meditación o descanso.</p>
+            <p class="price">$12.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54105690581_c3eebf4c83_w.jpg" alt="Vela 9">
+            <h2>Rosas Delicadas</h2>
+            <p>Un toque suave y romántico, perfecto para crear un ambiente íntimo y calmante, con fragancia floral y dulce.</p>
+            <p class="price">$9.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54106032839_1a96a7c710_w.jpg" alt="Vela 9">
+            <h2>Seducción de Canela</h2>
+            <p> Un toque especiado y cálido que envuelve tus sentidos, creando una atmósfera acogedora y llena de confort.</p>
+            <p class="price">$5.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        <div class="product">
+            <img src="https://live.staticflickr.com/65535/54106146090_b1a174a3f6_w.jpg" alt="Vela 9">
+            <h2>Vainilla Dulce</h2>
+            <p>La dulzura reconfortante de la vainilla crea una atmósfera cálida y acogedora, ideal para momentos de relax en casa.</p>
+            <p class="price">$12.000</p>
+            <a href="https://wa.me/523114791833?text=Hola,%20me%20gustaría%20saber%20más%20información%20sobre%20sus%20productos.%20">Comprar ahora</a>
+        </div>
+        </div>
+     </section>
+</body>
+</html>
